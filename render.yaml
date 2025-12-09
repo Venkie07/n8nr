@@ -22,14 +22,17 @@ services:
       - key: N8N_PROTOCOL
         value: "https"
 
-      # Must be your actual Render domain
       - key: N8N_HOST
         value: "n8nr-tng3.onrender.com"
 
-      # Recommended for webhooks
       - key: WEBHOOK_URL
         value: "https://n8nr-tng3.onrender.com/"
 
-      # SQLite database location
+      - key: DB_TYPE
+        value: sqlite
+
       - key: DB_SQLITE_DATABASE
         value: /home/node/.n8n/data/database.sqlite
+
+      - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
+        value: "false"
