@@ -23,8 +23,9 @@ services:
         value: "https"
 
       - key: N8N_HOST
-        value: "0.0.0.0"
+        value: "n8nr-tng3.onrender.com"
 
       # Optional but HIGHLY recommended for webhooks
       - key: WEBHOOK_URL
         value: "https://n8n-render.onrender.com/"
+
